@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/ch01-spring/ch01-spring.iml" filepath="$PROJECT_DIR$/ch01-spring/ch01-spring.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ch02-di/ch02-di.iml" filepath="$PROJECT_DIR$/ch02-di/ch02-di.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ch03-ioc/ch03-ioc.iml" filepath="$PROJECT_DIR$/ch03-ioc/ch03-ioc.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ch04-di-anno/ch04-di-anno.iml" filepath="$PROJECT_DIR$/ch04-di-anno/ch04-di-anno.iml" />
+    </modules>
+  </component>
+</project>
