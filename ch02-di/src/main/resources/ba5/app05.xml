@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="myStu05" class="org.example.ba5.Student" autowire="byType">
+        <property name="name" value="张献忠"></property>
+        <property name="age" value="33"></property>
+    </bean>
+<!--    <bean id="primarySch" class="org.example.ba5.PrimarySchool">-->
+<!--        <property name="name" value="图图小学"></property>-->
+<!--        <property name="address" value="图图镇"></property>-->
+<!--    </bean>-->
+    <bean id="school" class="org.example.ba5.School">
+        <property name="name" value="图图大学"></property>
+        <property name="address" value="图图城"></property>
+    </bean>
+</beans>
