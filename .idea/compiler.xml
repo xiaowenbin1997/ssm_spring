@@ -7,6 +7,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="ch03-ioc" />
+        <module name="ch05-aop-leading" />
         <module name="ch04-di-anno" />
         <module name="ch01-spring" />
         <module name="ch02-di" />
@@ -17,6 +18,7 @@
       <module name="ch02-di" target="8" />
       <module name="ch03-ioc" target="8" />
       <module name="ch04-di-anno" target="8" />
+      <module name="ch05-aop-leading" target="8" />
     </bytecodeTargetLevel>
   </component>
 </project>
