@@ -6,6 +6,9 @@ import org.example.domain.Goods;
 import org.example.domain.Sale;
 import org.example.excep.ChangeException;
 import org.example.service.BuyGoodsService;
+import org.springframework.transaction.annotation.Isolation;
+import org.springframework.transaction.annotation.Propagation;
+import org.springframework.transaction.annotation.Transactional;
 
 public class BuyGoodsServiceImpl implements BuyGoodsService {
     private SaleDao saleDao;
@@ -19,6 +22,12 @@ public class BuyGoodsServiceImpl implements BuyGoodsService {
         this.goodsDao = goodsDao;
     }
 
+    @Transactional(
+                    propagation = Propagation.REQUIRED,
+                    isolation = Isolation.DEFAULT,
+                    readOnly = false,
+                    rollbackFor = {NullPointerException.class,ChangeException.class}
+                    )
     @Override
     public void buy(Integer goodsId, Integer nums) {
         System.out.println("buy方法的开始");
